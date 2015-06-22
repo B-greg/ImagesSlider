@@ -32,6 +32,7 @@ public class ImageSlidesFragmentAdapter extends FragmentStatePagerAdapter implem
     }
     
     public void setImages(List<Object> images){
+        this.Images.clear();
         this.Images.addAll(images);
     }
 
