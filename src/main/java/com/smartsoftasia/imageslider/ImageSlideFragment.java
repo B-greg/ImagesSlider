@@ -11,8 +11,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.squareup.picasso.Picasso;
+import com.bumptech.glide.Glide;
 
 /**
  * Created by gregoire barret on 2/12/15.
@@ -84,11 +83,11 @@ public class ImageSlideFragment extends Fragment {
             imageName.setVisibility(View.GONE);
         }
         else if (ressouceType==TYPE_URL) {
-            Picasso.with(getActivity()).load(imageUrl).into(image);
+            Glide.with(getActivity()).load(imageUrl).into(image);
             imageName.setVisibility(View.GONE);
         }
         else if (ressouceType == TYPE_IMAGE_SLIDER){
-            Picasso.with(getActivity()).load(imageSlider.url).into(image);
+          Glide.with(getActivity()).load(imageSlider.url).into(image);
             imageName.setVisibility(View.VISIBLE);
             imageName.setText(imageSlider.name);
         }
