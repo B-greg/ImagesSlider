@@ -8,9 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.bumptech.glide.Glide;
-
 
 /**
  * Created by gregoire barret on 2/12/15.
@@ -86,7 +84,7 @@ public class ImageSlideFragment extends Fragment {
             imageName.setVisibility(View.GONE);
         }
         else if (ressouceType == TYPE_IMAGE_SLIDER){
-            Glide.with(getActivity()).load(imageSlider.url).into(image);
+          Glide.with(getActivity()).load(imageSlider.url).into(image);
             imageName.setVisibility(View.VISIBLE);
             imageName.setText(imageSlider.name);
         }
