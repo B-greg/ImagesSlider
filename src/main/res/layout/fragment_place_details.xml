@@ -3,22 +3,67 @@
 <!--
   Created by gregoire barret.
  -->
+<<<<<<< Updated upstream:src/main/res/layout/fragment_place_details.xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical" >
 
+=======
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+>>>>>>> Stashed changes:src/main/res/layout/fragment_image.xml
 
 
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/indicator"
+      >
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="fill_parent"
+<<<<<<< Updated upstream:src/main/res/layout/fragment_place_details.xml
         android:layout_height="0dp"
         android:layout_weight="1" />
+=======
+        android:layout_height="match_parent"
+        />
+>>>>>>> Stashed changes:src/main/res/layout/fragment_image.xml
 
-    <com.smartsoftasia.imageslider.viewPagerIndicator.CirclePageIndicator
-        android:id="@+id/indicator"
-        android:layout_width="fill_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/arraw_right"
+        android:id="@+id/imageView_arrow_Right"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginBottom="22dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+<<<<<<< Updated upstream:src/main/res/layout/fragment_place_details.xml
         android:padding="10dip" />
 </LinearLayout>
+=======
+        android:src="@drawable/arrow_left"
+        android:id="@+id/imageView_arrow_left"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginBottom="22dp"
+        />
+  </FrameLayout>
+
+
+  <com.smartsoftasia.imageslider.viewPagerIndicator.CirclePageIndicator
+      android:id="@+id/indicator"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dip"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      />
+</RelativeLayout>
+>>>>>>> Stashed changes:src/main/res/layout/fragment_image.xml
