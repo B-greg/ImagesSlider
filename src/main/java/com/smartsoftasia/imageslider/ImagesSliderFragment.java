@@ -70,7 +70,7 @@ public class ImagesSliderFragment extends Fragment implements ImageSlideFragment
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
                            Bundle savedInstanceState) {
-    View view = inflater.inflate(R.layout.fragment_image, container, false);
+    View view = inflater.inflate(R.layout.fragment_place_details, container, false);
     leftArrow = (ImageView) view.findViewById(R.id.imageView_arrow_left);
     rightArrow = (ImageView) view.findViewById(R.id.imageView_arrow_Right);
 
