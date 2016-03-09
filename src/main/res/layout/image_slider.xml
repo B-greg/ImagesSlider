@@ -10,12 +10,14 @@
     <ImageView
         android:src="@drawable/image4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:id="@+id/imageView_slider"
+        android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         android:layout_gravity="center"
         android:layout_alignParentTop="true"
-        android:layout_above="@+id/textView_slider" />
+        android:layout_above="@+id/textView_slider"
+        />
 
     <TextView
         android:layout_width="match_parent"
